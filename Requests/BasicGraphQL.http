@@ -1,0 +1,15 @@
+@BasicGraphQL_HostAddress = http://localhost:5172
+
+GET {{BasicGraphQL_HostAddress}}/
+Accept: application/json
+
+{
+  "query": "{ hero {name} }"
+}
+
+###
+
+POST {{BasicGraphQL_HostAddress}}/books/create/
+Content-Type: application/json
+
+"{ hero { name }}"
